@@ -1,0 +1,46 @@
+/* Stack.css */
+.stack-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  
+  .card {
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    justify-content: center;
+display: flex;
+flex-direction: column;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tech-image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin:0.5rem auto ;
+  }
+  
+  .tech-name {
+    margin: 0.5rem 0;
+    font-size: 1.25rem;
+    color: #333;
+  }
+  
+  .progress-bar-container {
+    position: relative;
+    height: 10px;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color: #3182ce;
+    transition: width 0.3s ease;
+  }
+  

@@ -1,0 +1,135 @@
+/* Basic Reset */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .about-container {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    gap: 2rem;
+    overflow: hidden; /* Prevent overflow from parent container */
+  }
+  
+  .left-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 100vh; /* Ensure it fits within the viewport height */
+  }
+  
+  .profile-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    object-fit: cover; /* Use cover for better fit */
+  }
+  
+  .contact-info {
+    text-align: left;
+  }
+  
+  .contact-info p {
+    margin: 0.5rem 0;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .social-links a {
+    color: #3182ce;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #63b3ed;
+  }
+  
+  .right-section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .name {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-me {
+    margin-bottom: 2rem;
+  }
+  
+  .statistics {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .card {
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    flex: 1;
+  }
+  
+  .card h2 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .card p {
+    font-size: 1.25rem;
+    margin: 0;
+  }
+  
+  .testimonials {
+    margin-top: 2rem;
+  }
+  
+  .testimonials h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .testimonial-card {
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .testimonial-card p {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .testimonial-card p:first-of-type {
+    font-style: italic;
+  }
+  
+  @media (max-width: 767px) {
+    .about-container {
+      flex-direction: column;
+      padding: 2rem;
+      gap: 2rem;
+    }
+    
+    .profile-photo {
+      width: 200px;
+      height: 200px;
+      margin-bottom: 1rem;
+    }
+    
+    .left-section {
+      max-height: none; /* Remove max-height on smaller screens */
+      overflow-y: visible; /* Disable scrolling */
+    }
+  }
+  
