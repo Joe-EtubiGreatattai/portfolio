@@ -99,6 +99,7 @@
     right: 0;
     bottom: 0; /* Span the full height */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #054f94;
     padding: 2rem 1rem; /* Add padding to prevent content from touching edges */
     overflow-y: auto; /* Allow scrolling if content is too long */
     transform: translateY(-100%);
